@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gideon Hatorangan Rajagukguk | Business & System Analyst</title>
+    <meta
+      name="description"
+      content="Beranda Gideon Hatorangan Rajagukguk, Business & System Analyst."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-MW6YQL8pLeITYpNsqkcE4ZGyIo+uXbJr8oFdW/TgGZz5wcM7zAlU7bnn2dtMbTWduBzH6W/lAt1hFh/O7x0Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      document.documentElement.classList.remove('light');
+      try {
+        localStorage.removeItem('theme');
+      } catch (err) {}
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <div id="preloader" role="status" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p
+        class="loading-text"
+        data-i18n="preloader.loading"
+        data-i18n-html="true"
+      >
+        Memuat <span id="loaderPercent">0%</span>
+      </p>
+    </div>
+
+    <canvas id="bg-particles" aria-hidden="true"></canvas>
+    <div class="gradient-blob blob-1" aria-hidden="true"></div>
+    <div class="gradient-blob blob-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          >Gideon Hatorangan Rajagukguk<span>.</span></a
+        >
+        <button
+          class="nav-toggle icon-btn"
+          type="button"
+          aria-label="Buka navigasi"
+          aria-expanded="false"
+          data-i18n-attr="aria-label:nav.toggle"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul id="navLinks" class="nav-links">
+          <li>
+            <a href="index.html" data-page="home" data-i18n="nav.home"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a href="about.html" data-page="about" data-i18n="nav.about"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a href="skills.html" data-page="skills" data-i18n="nav.skills"
+              >Keahlian</a
+            >
+          </li>
+          <li>
+            <a
+              href="experience.html"
+              data-page="experience"
+              data-i18n="nav.experience"
+              >Pengalaman</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" data-page="projects" data-i18n="nav.projects"
+              >Proyek</a
+            >
+          </li>
+          <li>
+            <a
+              href="certifications.html"
+              data-page="certifications"
+              data-i18n="nav.certifications"
+              >Sertifikasi</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" data-page="contact" data-i18n="nav.contact"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <div
+            class="lang-toggle"
+            role="group"
+            aria-label="Pilih bahasa"
+            data-i18n-attr="aria-label:lang.toggle"
+          >
+            <button type="button" class="lang-btn" data-lang="id">ID</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <button
+            id="soundToggle"
+            class="icon-btn sound-toggle"
+            type="button"
+            aria-label="Nyalakan suara"
+            data-i18n-attr="aria-label:sound.play"
+          >
+            <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <audio
+      id="bgAudio"
+      class="site-audio"
+      preload="auto"
+      playsinline
+      aria-hidden="true"
+      loop
+    >
+      <source
+        src="https://cdn.pixabay.com/download/audio/2021/09/30/audio_7a8c390769.mp3?filename=ambient-piano-112191.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <main>
+      <section
+        class="section hero container reveal-up"
+        aria-labelledby="home-title"
+      >
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Business &amp; System Analyst</p>
+          <h1 id="home-title">Gideon Hatorangan Rajagukguk</h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">
+            Memetakan proses, merancang sistem, dan memutuskan dengan data.
+          </p>
+          <div
+            class="hero-socials"
+            role="group"
+            aria-label="Kontak utama"
+            data-i18n-attr="aria-label:hero.socials"
+          >
+            <a
+              href="https://www.linkedin.com/in/gideonhatorangan"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="hero-socials-icon"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.039-1.852-3.039-1.853 0-2.136 1.445-2.136 2.939v5.669H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.367-1.852 3.598 0 4.262 2.368 4.262 5.455v6.288zM5.337 7.433c-1.144 0-2.067-.926-2.067-2.067C3.27 4.226 4.193 3.3 5.337 3.3c1.142 0 2.066.926 2.066 2.066 0 1.141-.924 2.067-2.066 2.067zM6.813 20.452H3.861V9h2.952v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                ></path>
+              </svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="mailto:gideonhatorangan.09@gmail.com" aria-label="Email">
+              <svg
+                class="hero-socials-icon"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22.5 3H1.5A1.5 1.5 0 0 0 0 4.5v15A1.5 1.5 0 0 0 1.5 21h21a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 22.5 3zm-.45 3-9.3 6.975a.75.75 0 0 1-.9 0L2.55 6H22.05zM21 19.5H3a.5.5 0 0 1-.5-.5V7.35l9.75 7.312a2.25 2.25 0 0 0 2.5 0L21.5 7.35V19a.5.5 0 0 1-.5.5z"
+                ></path>
+              </svg>
+              <span class="sr-only">Email</span>
+            </a>
+            <a
+              href="https://www.facebook.com/GIDEONH.R.G"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <svg
+                class="hero-socials-icon"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22.676 0H1.326C.594 0 0 .594 0 1.326v21.348C0 23.406.594 24 1.326 24h11.494v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.312h3.587l-.467 3.622H16.664V24h6.012C23.406 24 24 23.406 24 22.674V1.326C24 .594 23.406 0 22.676 0"
+                ></path>
+              </svg>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a
+              href="https://www.instagram.com/gideonhatorangan/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                class="hero-socials-icon"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.264 2.242 1.326 3.608.058 1.266.069 1.645.069 4.849s-.011 3.584-.069 4.85c-.062 1.366-.351 2.633-1.326 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.645.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.647 2.163 15.268 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608C4.533 2.567 5.8 2.278 7.166 2.216 8.432 2.158 8.811 2.147 12 2.147m0-2.163C8.741-.016 8.332-.003 7.052.064 5.773.131 4.583.384 3.533 1.434c-1.05 1.05-1.304 2.24-1.371 3.519C2.095 6.232 2.082 6.641 2.082 12c0 5.359.013 5.768.08 7.048.067 1.279.321 2.469 1.371 3.519 1.05 1.05 2.24 1.304 3.519 1.371C8.232 23.905 8.641 23.918 12 23.918s3.768-.013 5.048-.08c1.279-.067 2.469-.321 3.519-1.371 1.05-1.05 1.304-2.24 1.371-3.519.067-1.279.08-1.688.08-7.048s-.013-5.768-.08-7.048c-.067-1.279-.321-2.469-1.371-3.519-1.05-1.05-2.24-1.304-3.519-1.371C15.768-.003 15.359-.016 12-.016z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M12 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A3.999 3.999 0 1 1 16 12a3.999 3.999 0 0 1-4 4z"
+                ></path>
+                <circle
+                  cx="18.406"
+                  cy="5.594"
+                  r="1.44"
+                  fill="currentColor"
+                ></circle>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </div>
+          <a
+            class="scroll-indicator"
+            href="about.html"
+            aria-label="Menuju halaman Tentang"
+            data-i18n-attr="aria-label:hero.scroll"
+          >
+            <i class="fa-solid fa-angles-down"></i>
+          </a>
+        </div>
+        <div class="hero-media">
+          <div class="profile-card tilt">
+            <img
+              class="profile-img"
+              src="assets/profile.jpg"
+              alt="Gideon Hatorangan Rajagukguk"
+              width="360"
+              height="480"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p
+          data-i18n="footer.copy"
+          data-i18n-html="true"
+        >
+          &copy; <span id="year"></span> Gideon Hatorangan Rajagukguk -
+          Information Systems Graduate.
+        </p>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/gideonhatorangan/"
+            target="_blank"
+            aria-label="Instagram"
+            rel="noopener"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/gideonhatorangan"
+            target="_blank"
+            aria-label="LinkedIn"
+            rel="noopener"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/GIDEONH.R.G"
+            target="_blank"
+            aria-label="Facebook"
+            rel="noopener"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://github.com/gideonhatorangan"
+            target="_blank"
+            aria-label="GitHub"
+            rel="noopener"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:gideonhatorangan.09@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <button
+        id="toTop"
+        class="to-top"
+        type="button"
+        aria-label="Kembali ke atas"
+        data-i18n-attr="aria-label:footer.toTop"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      type="text/babel"
+      data-presets="env,react"
+      src="contact-form.js"
+    ></script>
+    <script src="ea.js" defer></script>
+  </body>
+</html>

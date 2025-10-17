@@ -1,0 +1,115 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak | Gideon Hatorangan Rajagukguk</title>
+  <meta name="description" content="Hubungi Gideon Hatorangan Rajagukguk melalui formulir kontak atau email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-MW6YQL8pLeITYpNsqkcE4ZGyIo+uXbJr8oFdW/TgGZz5wcM7zAlU7bnn2dtMbTWduBzH6W/lAt1hFh/O7x0Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    document.documentElement.classList.remove('light');
+    try {
+      localStorage.removeItem('theme');
+    } catch (err) {}
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <div id="preloader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="loading-text" data-i18n="preloader.loading" data-i18n-html="true">Memuat <span id="loaderPercent">0%</span></p>
+  </div>
+
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+  <div class="gradient-blob blob-1" aria-hidden="true"></div>
+  <div class="gradient-blob blob-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Gideon Hatorangan Rajagukguk<span>.</span></a>
+      <button class="nav-toggle icon-btn" type="button" aria-label="Buka navigasi" aria-expanded="false" data-i18n-attr="aria-label:nav.toggle">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Beranda</a></li>
+        <li><a href="about.html" data-page="about" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" data-page="skills" data-i18n="nav.skills">Keahlian</a></li>
+        <li><a href="experience.html" data-page="experience" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="projects.html" data-page="projects" data-i18n="nav.projects">Proyek</a></li>
+        <li><a href="certifications.html" data-page="certifications" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" data-page="contact" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Pilih bahasa" data-i18n-attr="aria-label:lang.toggle">
+          <button type="button" class="lang-btn" data-lang="id">ID</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button id="soundToggle" class="icon-btn sound-toggle" type="button" aria-label="Nyalakan suara" data-i18n-attr="aria-label:sound.play">
+          <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <audio id="bgAudio" class="site-audio" preload="auto" playsinline aria-hidden="true" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/30/audio_7a8c390769.mp3?filename=ambient-piano-112191.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section class="section container contact reveal-up" aria-labelledby="contact-title">
+      <h1 id="contact-title" class="section-title" data-i18n="contact.title">
+        Hubungi Saya
+      </h1>
+      <p
+        class="section-subtitle"
+        data-i18n="contact.subtitle"
+        data-i18n-html="true"
+      >
+        Isi formulir berikut atau kirim email langsung ke
+        <a
+          href="mailto:gideonhatorangan.09@gmail.com"
+          class="contact-highlight-email"
+        >
+          gideonhatorangan.09@gmail.com
+        </a>.
+      </p>
+      <div id="contact-root"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy" data-i18n-html="true">&copy; <span id="year"></span> Gideon Hatorangan Rajagukguk - Information Systems Graduate.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gideonhatorangan" target="_blank" aria-label="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:youremail@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <button id="toTop" class="to-top" type="button" aria-label="Kembali ke atas" data-i18n-attr="aria-label:footer.toTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script
+    type="text/babel"
+    data-presets="env,react"
+    src="contact-form.js"
+  ></script>
+  <script src="ea.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sertifikasi | Gideon Hatorangan Rajagukguk</title>
+  <meta name="description" content="Daftar sertifikasi dan pelatihan Gideon Hatorangan Rajagukguk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-MW6YQL8pLeITYpNsqkcE4ZGyIo+uXbJr8oFdW/TgGZz5wcM7zAlU7bnn2dtMbTWduBzH6W/lAt1hFh/O7x0Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    document.documentElement.classList.remove('light');
+    try {
+      localStorage.removeItem('theme');
+    } catch (err) {}
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="certifications">
+  <div id="preloader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="loading-text" data-i18n="preloader.loading" data-i18n-html="true">Memuat <span id="loaderPercent">0%</span></p>
+  </div>
+
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+  <div class="gradient-blob blob-1" aria-hidden="true"></div>
+  <div class="gradient-blob blob-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Gideon Hatorangan Rajagukguk<span>.</span></a>
+      <button class="nav-toggle icon-btn" type="button" aria-label="Buka navigasi" aria-expanded="false" data-i18n-attr="aria-label:nav.toggle">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Beranda</a></li>
+        <li><a href="about.html" data-page="about" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" data-page="skills" data-i18n="nav.skills">Keahlian</a></li>
+        <li><a href="experience.html" data-page="experience" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="projects.html" data-page="projects" data-i18n="nav.projects">Proyek</a></li>
+        <li><a href="certifications.html" data-page="certifications" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" data-page="contact" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Pilih bahasa" data-i18n-attr="aria-label:lang.toggle">
+          <button type="button" class="lang-btn" data-lang="id">ID</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button id="soundToggle" class="icon-btn sound-toggle" type="button" aria-label="Nyalakan suara" data-i18n-attr="aria-label:sound.play">
+          <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <audio id="bgAudio" class="site-audio" preload="auto" playsinline aria-hidden="true" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/30/audio_7a8c390769.mp3?filename=ambient-piano-112191.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+        <section class="section container reveal" aria-labelledby="cert-title">
+      <h1 id="cert-title" class="section-title" data-i18n="certifications.title">Sertifikasi</h1>
+      <p class="section-subtitle" data-i18n="certifications.subtitle">Ringkas pencapaian sertifikasi dan pelatihan profesional untuk menunjukkan komitmen belajar berkelanjutan.</p>
+      <div class="cert-grid">
+        <article class="card glass tilt cert-card">
+          <div class="cert-body">
+            <h2 data-i18n="certifications.cards.1.title">TOEFL Preparation Test</h2>
+            <p class="cert-meta" data-i18n="certifications.cards.1.meta">PAMU Universitas Esa Unggul - Prediksi Skor 450 - Juli 2025</p>
+            <ul class="cert-points">
+              <li data-i18n="certifications.cards.1.points.1">Program persiapan akademik untuk evaluasi kemampuan bahasa Inggris.</li>
+              <li data-i18n="certifications.cards.1.points.2">Meliputi struktur, listening, dan reading comprehension.</li>
+              <li data-i18n="certifications.cards.1.points.3">Sertifikat digunakan sebagai prasyarat kelulusan mata kuliah.</li>
+            </ul>
+          </div>
+          <figure class="cert-figure">
+            <img src="assets/cert-toefl.png" alt="Sertifikat TOEFL Preparation PAMU Universitas Esa Unggul" loading="lazy" />
+          </figure>
+        </article>
+        <article class="card glass tilt cert-card">
+          <div class="cert-body">
+            <h2 data-i18n="certifications.cards.2.title">Online Training ESQ Mahasiswa</h2>
+            <p class="cert-meta" data-i18n="certifications.cards.2.meta">ESQ Leadership Center - Universitas Esa Unggul - September 2020</p>
+            <ul class="cert-points">
+              <li data-i18n="certifications.cards.2.points.1">Pelatihan karakter dan leadership berbasis Emotional &amp; Spiritual Quotient.</li>
+              <li data-i18n="certifications.cards.2.points.2">Menekankan nilai integritas, visi pribadi, dan kolaborasi tim.</li>
+              <li data-i18n="certifications.cards.2.points.3">Diterapkan dalam aktivitas organisasi kemahasiswaan dan kerja tim.</li>
+            </ul>
+          </div>
+          <figure class="cert-figure">
+            <img src="assets/cert-training.png" alt="Training Certificate ESQ Leadership Center" loading="lazy" />
+          </figure>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy" data-i18n-html="true">&copy; <span id="year"></span> Gideon Hatorangan Rajagukguk - Information Systems Graduate.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gideonhatorangan" target="_blank" aria-label="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:youremail@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <button id="toTop" class="to-top" type="button" aria-label="Kembali ke atas" data-i18n-attr="aria-label:footer.toTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="ea.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+

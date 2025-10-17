@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keahlian | Gideon Hatorangan Rajagukguk</title>
+  <meta name="description" content="Keahlian utama Gideon Hatorangan Rajagukguk dalam analisis bisnis, data, dan teknologi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-MW6YQL8pLeITYpNsqkcE4ZGyIo+uXbJr8oFdW/TgGZz5wcM7zAlU7bnn2dtMbTWduBzH6W/lAt1hFh/O7x0Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    document.documentElement.classList.remove('light');
+    try {
+      localStorage.removeItem('theme');
+    } catch (err) {}
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="skills">
+  <div id="preloader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="loading-text" data-i18n="preloader.loading" data-i18n-html="true">Memuat <span id="loaderPercent">0%</span></p>
+  </div>
+
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+  <div class="gradient-blob blob-1" aria-hidden="true"></div>
+  <div class="gradient-blob blob-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Gideon Hatorangan Rajagukguk<span>.</span></a>
+      <button class="nav-toggle icon-btn" type="button" aria-label="Buka navigasi" aria-expanded="false" data-i18n-attr="aria-label:nav.toggle">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Beranda</a></li>
+        <li><a href="about.html" data-page="about" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" data-page="skills" data-i18n="nav.skills">Keahlian</a></li>
+        <li><a href="experience.html" data-page="experience" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="projects.html" data-page="projects" data-i18n="nav.projects">Proyek</a></li>
+        <li><a href="certifications.html" data-page="certifications" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" data-page="contact" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Pilih bahasa" data-i18n-attr="aria-label:lang.toggle">
+          <button type="button" class="lang-btn" data-lang="id">ID</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button id="soundToggle" class="icon-btn sound-toggle" type="button" aria-label="Nyalakan suara" data-i18n-attr="aria-label:sound.play">
+          <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <audio id="bgAudio" class="site-audio" preload="auto" playsinline aria-hidden="true" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/30/audio_7a8c390769.mp3?filename=ambient-piano-112191.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section class="section container reveal" aria-labelledby="skills-title">
+      <h1 id="skills-title" class="section-title" data-i18n="skills.title">Keahlian Utama</h1>
+      <p class="section-subtitle" data-i18n="skills.subtitle">Memadukan analisis proses, rekayasa kebutuhan, dan analitik data untuk keputusan yang cepat dan terukur.</p>
+      <div class="grid-2">
+        <div>
+          <h2 data-i18n="skills.block1.title">Analytical &amp; Business</h2>
+          <div class="skills">
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block1.skill1.title">Business Process Modelling</h3>
+              <p class="skill-desc" data-i18n="skills.block1.skill1.desc">Memetakan alur end-to-end (AS-IS -> TO-BE), mengidentifikasi bottleneck/waste, dan menyusun perbaikan yang realistis.</p>
+            </article>
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block1.skill2.title">Requirement Engineering</h3>
+              <p class="skill-desc" data-i18n="skills.block1.skill2.desc">Menggali kebutuhan, menulis user story/BRD/SRS yang jelas, menyepakati acceptance criteria, dan menutup celah komunikasi bisnis-teknis.</p>
+            </article>
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block1.skill3.title">Stakeholder Alignment</h3>
+              <p class="skill-desc" data-i18n="skills.block1.skill3.desc">Menyelaraskan ekspektasi lintas fungsi, memfasilitasi workshop, dan menjaga keputusan berbasis data &amp; prioritas bisnis.</p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h2 data-i18n="skills.block2.title">Data &amp; Technical</h2>
+          <div class="skills">
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block2.skill1.title">SQL &amp; Data Warehouse</h3>
+              <p class="skill-desc" data-i18n="skills.block2.skill1.desc">Query join/agg dasar-menengah, validasi kualitas data, dan menyiapkan dataset siap dashboard.</p>
+            </article>
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block2.skill2.title">Power BI &amp; Looker Studio</h3>
+              <p class="skill-desc" data-i18n="skills.block2.skill2.desc">Membangun model sederhana, KPI operasional, drill-down &amp; filter interaktif, serta merilis dashboard yang hidup.</p>
+            </article>
+            <article class="skill">
+              <h3 class="skill-title" data-i18n="skills.block2.skill3.title">Automation (AppScript, RPA)</h3>
+              <p class="skill-desc" data-i18n="skills.block2.skill3.desc">Otomasi rekap &amp; notifikasi, validasi input, dan integrasi ringan (email/sheet/form) untuk memangkas kerja manual.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <article class="card glass tilt tools-card">
+        <h2 data-i18n="skills.tools.title">Alat yang Saya Kuasai</h2>
+        <p class="skill-desc" data-i18n="skills.tools.summary">Tableau | Python | Figma | SAP | Jira</p>
+        <p class="skill-desc" data-i18n="skills.tools.plus">Plus: Excel/Google Sheets, BPMN, Git/GitHub, REST dasar.</p>
+        <div class="chips">
+          <span class="chip">Tableau</span>
+          <span class="chip">Python</span>
+          <span class="chip">Figma</span>
+          <span class="chip">SAP</span>
+          <span class="chip">Jira</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy" data-i18n-html="true">&copy; <span id="year"></span> Gideon Hatorangan Rajagukguk - Information Systems Graduate.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gideonhatorangan" target="_blank" aria-label="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:youremail@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <button id="toTop" class="to-top" type="button" aria-label="Kembali ke atas" data-i18n-attr="aria-label:footer.toTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="ea.js" defer></script>
+</body>
+</html>
